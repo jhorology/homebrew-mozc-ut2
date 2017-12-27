@@ -40,4 +40,4 @@ Using with emacs, need option --with-emacs
 ### License
 * This formula script is based on original mozcdic-ut2, license under GPL.
 * For license information about mozc, refere to [google/mozc](https://github.com/google/mozc).
-* For license information about Mozc UT Dictionary, refere to http://www.geocities.jp/ep3797/mozc_01.html
+* For license information about Mozc UT Dictionary, refere to http://www.geocities.jp/ep3797/mozc-ut2.html
