@@ -6,7 +6,7 @@ class MozcUt2 < Formula
   desc 'Mozc with UT2 Dictionary'
   homepage 'http://www.geocities.jp/ep3797/mozc-ut2.html'
   url "https://osdn.net/frs/chamber_redir.php?m=iij&f=%2Fusers%2F16%2F16039%2Fmozcdic-ut2-20171008.tar.bz2"
-  version "20171008"
+  version "20171008-1"
   sha256 "fad6ae12f8ee918222d376d124a892fc233ab1159f7e551c4cffe1e3203af3fb"
   
   # options
@@ -183,7 +183,9 @@ class MozcUt2 < Formula
       sdk_version = m[1]
       prebuild_cmd = "GYP_DEFINES=\"mac_sdk=#{sdk_version} mac_deployment_target=10.9\" /usr/bin/python build_mozc.py gyp --branding Mozc-UT2"
       if build.with? 'qt'
-        prebuild_cmd << " --qtdir #{Formula["qt5"].opt_prefix}"
+        # gui tools doesn't work if qtdir /usr/local/opt/qt
+        # prebuild_cmd << " --qtdir #{Formula["qt5"].opt_prefix}"
+        prebuild_cmd << " --qtdir /usr/local/opt/qt5"
       else
         prebuild_cmd << " --noqt"
       end
