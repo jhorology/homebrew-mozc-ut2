@@ -6,7 +6,7 @@ class MozcUt2 < Formula
   desc 'Mozc with UT2 Dictionary'
   homepage 'http://www.geocities.jp/ep3797/mozc-ut2.html'
   url "https://osdn.net/frs/chamber_redir.php?m=iij&f=%2Fusers%2F16%2F16039%2Fmozcdic-ut2-20171008.tar.bz2"
-  version "20171008-1"
+  version "20171008-2"
   sha256 "fad6ae12f8ee918222d376d124a892fc233ab1159f7e551c4cffe1e3203af3fb"
   
   # options
@@ -32,8 +32,8 @@ class MozcUt2 < Formula
   end
   resource "jigyousyo" do
     url 'http://www.post.japanpost.jp/zipcode/dl/jigyosyo/zip/jigyosyo.zip'
-    # check on 2017/12/27
-    sha256 'f94e847dead0e7cb8f5f2f2323701f8f878ba5da9d2da03c9de77281601695c1'
+    # check on 2017/12/30
+    sha256 'af192a0af0d875d1a1c8fb4639100a02dd2f369521d9c654a67ba2bfdfeedaa2'
   end
   resource "edict" do
     url 'http://ftp.monash.edu.au/pub/nihongo/edict.gz'
